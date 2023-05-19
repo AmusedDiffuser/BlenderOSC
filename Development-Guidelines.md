@@ -1,9 +1,9 @@
 # Development concepting and guidelines 
 
 ## Table of contents 
-- [Signal flow](Brief-summary-of-signal-flow)
+- [Signal flow](##Brief-summary-of-signal-flow)
 
-- [Approach](Brief-summary-of-why this-approach-is-good:)
+- [Approach](##Brief-summary-of-why-this-approach-is-good)
 
 
 
