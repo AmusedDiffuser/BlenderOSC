@@ -1,9 +1,9 @@
 # Development concepting and guidelines 
 
 ## Table of contents 
-- [Signal flow](##Brief-summary-of-signal-flow)
+- [Signal flow](#Brief-summary-of-signal-flow)
 
-- [Approach](##Brief-summary-of-why-this-approach-is-good)
+- [Approach](#Brief-summary-of-why-this-approach-is-good)
 
 
 
@@ -60,7 +60,7 @@ Brief explanation:
 
 - From Blender data to VST parameters or Reaper actions: Blender data -> NodeOSC addon -> virtual MIDI port -> ReaLearn plugin -> VST parameters or Reaper actions
 
-[return to top](Development concepting-and-guidelines)
+[return to top](#Development-concepting-and-guidelines)
 
 ## Brief summary of why this approach is good
 
@@ -70,7 +70,7 @@ Brief explanation:
 
 - This approach is powerful because it allows you to control various aspects of both applications with live feedback, and to create complex interactions between them using different data types and formats.
 
-[return to top](Development concepting-and-guidelines)
+[return to top](#Development-concepting-and-guidelines)
 
 Source: Conversation with Bing, 5/19/2023
 
