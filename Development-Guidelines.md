@@ -1,6 +1,9 @@
+# Development concepting and guidelines 
 
+## Table of contents 
+- [Signal flow](Brief-summary-of-signal-flow)
 
-
+- [Approach](Brief-summary-of-why this-approach-is-good:)
 
 
 
@@ -47,7 +50,7 @@ Brief explanation:
 
 - To control Blender data from Reaper, you would send MIDI messages from Reaper's ReaLearn plugin to Blender's OSC input nodes via the virtual MIDI port. The MIDI messages would match the data type and format of the OSC input nodes that you created in Blender. The NodeOSC addon would then translate the MIDI messages into OSC messages and apply them to the Blender data.
 
-Brief summary of signal flow:
+## Brief summary of signal flow:
 
 - From external controller to VST parameters or Reaper actions: External controller -> MIDI device -> ReaLearn plugin -> VST parameters or Reaper actions
 
@@ -57,13 +60,17 @@ Brief summary of signal flow:
 
 - From Blender data to VST parameters or Reaper actions: Blender data -> NodeOSC addon -> virtual MIDI port -> ReaLearn plugin -> VST parameters or Reaper actions
 
-Brief summary of why this approach is good:
+[return to top](Development concepting-and-guidelines)
+
+## Brief summary of why this approach is good:
 
 - This approach is feasible because it uses existing tools that are compatible with Reaper and Blender, and that provide comprehensive features for creating MIDI/OSC learn mappings and OSC nodes.
 
 - This approach is expandable because it allows you to create multiple mappings and nodes for different purposes, and to customize them according to your needs and preferences.
 
 - This approach is powerful because it allows you to control various aspects of both applications with live feedback, and to create complex interactions between them using different data types and formats.
+
+[return to top](Development concepting-and-guidelines)
 
 Source: Conversation with Bing, 5/19/2023
 
@@ -77,7 +84,7 @@ Source: Conversation with Bing, 5/19/2023
 
 
 
-Here are some potential ways that a custom blender add-on and a custom Reaper script or action could simplify the user experience for setting this up:
+## Here are some potential ways that a custom blender add-on and a custom Reaper script or action could simplify the user experience for setting this up:
 
 - A custom blender add-on that can automatically create and configure OSC nodes based on the VST parameters or Reaper actions that you want to control or receive feedback from. For example, the add-on could scan the ReaLearn mappings in Reaper and generate corresponding OSC input nodes and output nodes in Blender, with the correct data type, format, address pattern, and arguments. The add-on could also provide a user interface for selecting and editing the OSC nodes and connecting them to other nodes.
 
@@ -91,9 +98,9 @@ Here are some potential ways that a custom blender add-on and a custom Reaper sc
 
 - A custom Reaper script or action that can automatically create and configure virtual MIDI ports for communicating with Blender. For example, the script or action could detect the available MIDI devices on your system and create virtual MIDI ports that match them. The script or action could also set the input and output ports of ReaLearn to match the virtual MIDI ports.
 
+[return to top](Development concepting-and-guidelines)
 
-
-Here is a possible description of the features and design of each individual tool, as well as the workflow of using them together:
+## Here is a possible description of the features and design of each individual tool, as well as the workflow of using them together:
 
 - The blender add-on would be called **BlenderOSC** and it would have the following features and design:
 
@@ -135,9 +142,9 @@ Here is a possible description of the features and design of each individual too
 
 
 
-##Here are some detailed notes for the programmer who will create these tools:
+## Here are some detailed notes for the programmer who will create these tools:
 
-- For the blender add-on (BlenderOSC):
+### - For the blender add-on (BlenderOSC):
 
   - The add-on should be written in Python and use the Blender Python API and the NodeOSC addon API. It should also use the oscPy and python-osc modules for handling OSC messages and the rtmidi module for handling MIDI messages.
 
@@ -155,7 +162,7 @@ Here is a possible description of the features and design of each individual too
 
   - The add-on should handle errors and exceptions gracefully by using try-except blocks and logging messages. It should also provide helpful messages and tooltips for the user.
 
-- For the Reaper script or action (ReaperOSC):
+### - For the Reaper script or action (ReaperOSC):
 
   - The script or action should be written in Lua or EEL2 and use the Reaper API and ReaScript API. It should also use the oscPy or python-osc modules for handling OSC messages and rtmidi module for handling MIDI messages.
 
