@@ -50,7 +50,7 @@ Brief explanation:
 
 - To control Blender data from Reaper, you would send MIDI messages from Reaper's ReaLearn plugin to Blender's OSC input nodes via the virtual MIDI port. The MIDI messages would match the data type and format of the OSC input nodes that you created in Blender. The NodeOSC addon would then translate the MIDI messages into OSC messages and apply them to the Blender data.
 
-## Brief summary of signal flow:
+## Brief summary of signal flow
 
 - From external controller to VST parameters or Reaper actions: External controller -> MIDI device -> ReaLearn plugin -> VST parameters or Reaper actions
 
@@ -62,7 +62,7 @@ Brief explanation:
 
 [return to top](Development concepting-and-guidelines)
 
-## Brief summary of why this approach is good:
+## Brief summary of why this approach is good
 
 - This approach is feasible because it uses existing tools that are compatible with Reaper and Blender, and that provide comprehensive features for creating MIDI/OSC learn mappings and OSC nodes.
 
