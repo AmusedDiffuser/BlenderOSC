@@ -4,11 +4,11 @@
 
   - Android/iPhone OSC controller app
   
-  - Android/iPhone remote/presenter
-  
+  - Android/iPhone remote/presenter app
+
   - Android/iPhone macro control and project overview app
 
-  - text input box allowing the user to paste an algorithm or code snippet either from writting it themselves, an example from list of examples, or generated for them by AI. This would allow users with minimal experience to request a particular setup in plain English and have their favorite AI chatbot right the code that would make the necessary connections and labels.
+  - text input box allowing the user to paste an algorithm or code snippet either from writting it themselves, an example from an official list of examples, or generated for them by AI. This would allow users with minimal experience to request a particular setup in plain English and have their friend or favorite AI chatbot write code that would make the necessary connections and labels.
   
   - extensive documentation allowing experienced users or AI chat box to review the documentation and write precise instructions/algorithms/code for the above mentioned text input box
   
