@@ -1,5 +1,7 @@
 # BlenderOSC and ReaperOSC
 
+## *Note: Early development, NOT WORKING YET!* 
+
 BlenderOSC and ReaperOSC are two tools that allow you to integrate Blender and Reaper using OSC and MIDI communication. You can control various aspects of both applications with live feedback, and create complex interactions between them using different data types and formats. These tools enhance your creative potential and productivity, as well as provide a fun and engaging experience.
 
 ## Table of Contents
